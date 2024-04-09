@@ -25,6 +25,7 @@ function Reg() {
             })
             .catch((Error) => {
                 setErrorMessage(Error.response.data.message);
+                setIsClicked(false);
             });
     };
 
@@ -67,7 +68,7 @@ function Reg() {
                         className='transition-all duration-500 ease-in-out hover:bg-pink-400 py-3 px-10 rounded-xl font-medium text-medium bg-pink-600 text-white'
                     >
                         {isClicked ?
-                            <img src="../Rolling.gif" alt="Rolling" className='w-6 mx-3 text-white' />
+                            <img src="../Rolling.gif" alt="Rolling" className='w-10 mx-3 text-white' />
                             :
                             "Create Account"
                         }
