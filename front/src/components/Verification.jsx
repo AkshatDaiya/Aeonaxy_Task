@@ -55,7 +55,7 @@ function Verification() {
                             </div>
                         </div>
                         {/* User avatar and upload button */}
-                        <img src={`../../upload/${img ? img : 'thor.jpg'}`} alt="avater" className={`userImg w-16 h-16 rounded-full shadow-2xl ${isClicked ? "userImg active" : "userImg"}`} />
+                        <img src={`../upload/${img ? img : 'thor.jpg'}`} alt="avater" className={`userImg w-16 h-16 rounded-full shadow-2xl ${isClicked ? "userImg active" : "userImg"}`} />
                         <button type='button' className={`uploadButton transition-all duration-500 ease-in-out hover:bg-pink-400 py-3 px-7 rounded-xl font-medium text-medium bg-pink-600 text-white mr-4 ${isClicked ? "uploadButton active" : "uploadButton"}`}>Upload</button>
                     </div>
                 </div>
