@@ -1,0 +1,145 @@
+#Reg .regForm .style input {
+    border-radius: 8px;
+}
+
+#Reg .regForm .style input:focus,
+#details .main form #location:focus {
+    outline: none;
+}
+
+#details .main form #image::-webkit-file-upload-button {
+    content: "Choose image";
+    padding: 10px 30px;
+    background-color: transparent;
+    font-size: large;
+    font-weight: 600;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1250px) {
+
+    #Reg .regForm .style {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #Reg img {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-width:1190px) {
+
+    #varification .pages .pageLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        right: -200px;
+        background: #f7f7f8;
+        width: 180px;
+        height: 100vh;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #varification .pages .pageLink.active .first {
+        padding-top: 15px;
+    }
+
+    #varification .pages .pageImg .flex .search {
+        position: fixed;
+        right: -200px;
+        bottom: 340px;
+        z-index: 9999;
+        margin-right: 12px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #varification .pages .pageImg .userImg {
+        position: fixed;
+        right: -200px;
+        bottom: 170px;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        margin-right: 12px;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #varification .pages .pageImg .uploadButton {
+        position: fixed;
+        right: -200px;
+        bottom: 100px;
+        margin-right: 33px;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #varification .pages .pageLink.active,
+    #varification .pages .pageImg .userImg.active,
+    #varification .pages .pageImg .uploadButton.active,
+    #varification .pages .pageImg .flex .search.active {
+        right: 0px;
+    }
+
+    #varification .pages .pageLink {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #varification .pages .burger {
+        display: block;
+        position: absolute;
+        right: 34px;
+        font-size: x-large;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    #Reg img {
+        aspect-ratio: 0.7 / 1 !important;
+        height: 110vh;
+    }
+
+    #details .main form .checkBox {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #Reg img {
+        aspect-ratio: 0.5 / 1.1 !important;
+        height: 110vh;
+    }
+
+    #details .main,
+    #details .main form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    #Reg img {
+        display: none;
+    }
+
+    #details .main form .img span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #details .main form .img span div {
+        min-width: 270px;
+        height: 211px;
+    }
+
+}
