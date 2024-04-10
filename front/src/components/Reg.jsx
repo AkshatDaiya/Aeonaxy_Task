@@ -68,7 +68,7 @@ function Reg() {
                         className='transition-all duration-500 ease-in-out hover:bg-pink-400 py-3 px-10 rounded-xl font-medium text-medium bg-pink-600 text-white'
                     >
                         {isClicked ?
-                            <img src="../Rolling.gif" alt="Rolling" className='w-8 mx-3 text-white' />
+                            <img src="../Rolling.gif" alt="Rolling" className='w-7 mx-10 text-white' />
                             :
                             "Create Account"
                         }
